@@ -1,0 +1,28 @@
+<Copyright Alexandru Olteanu, grupa 322CA, alexandruolteanu2001@gmail.com>
+
+	Pentru aceasta tema am urmarit sa simulez cat mai apropiat 
+posibil o baza de date. Acesta este motivul pentru care actiunile au 
+fost trimise de la un nivel la altul simetric. Prima data in Main Solution,
+de aici s-a identificat tipul de actiune (Comanda, Query sau Recomandare)
+si de aici mai departe tipul de interactiune cu utilizatorul. Actiunile au 
+avut impact direct asupra bazei de date insa in intregul proces m-am asigurat
+ca procesul fiecarei metode sa nu transmita mai departe influente locale
+(precum sortarea filmelor, etc) in baza de date. Modificarile au fost facute
+la finalul actiunilor respective.
+	De asemenea, am urmarit sa creez legaturi intre tipuri asemanatoare de 
+date precum filme si seriale, seriale si sezoanele acestora, etc. In acest 
+mod am usurat dificultatea task-urilor si am putut calcula mai usor lucruri
+precum rating-ul, videoclipuri favorite (filme dar si seriale) cu ajutorul 
+unor noi metode si clase declarate (calculul recursiv al rating-ului si 
+crearea clasei pentru AllVideos). 
+	Am construit de asemenea o clasa pentru filtre, metode pentru 
+vizionari, favorite, etc astfel incat consider ca actiunile au fost automatizate
+in mare parte. Am facut descrierea fiecarei metode importante in javadoc si am 
+inclus de asemenea fisierele .git pentru versionarea temei.
+
+
+P.S : In rest, in mare parte totul a decurs bine, testele de verificare
+singulara mi s-au parut putin cam slabe (multe solutii gresite puteau trece
+testele fara probleme si apoi sa ia fail pe cele 9 teste mari). Cerintele si 
+mesajele ce trebuie afisate, sortarea dupa nume sau nu (trebuia sortat dupa nume 
+in unele cazuri unde nu specifica in cerinta) au fost putin ambigue.
